@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingBottom="0dp">
+
+
+        <ImageButton
+            android:id="@+id/visibility_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|end"
+            android:src="@drawable/bill_notification" />
+
+        <TextView
+            android:id="@+id/notificationLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_num"
+            android:layout_alignTop="@id/visibility_button"
+            android:layout_alignLeft="@id/visibility_button"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="-15dp"
+            android:text="" />
+
+    </LinearLayout>
+
+</LinearLayout>
